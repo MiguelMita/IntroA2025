@@ -1,0 +1,35 @@
+let nombre = prompt("Ingrese su nombre:");
+let carnet = prompt("Ingrese su número de carnet:");
+
+function jugar() {
+  let numeroAleatorio = Math.floor(Math.random() * 9) + 1;
+  let numeroUsuario;
+
+  do {
+    numeroUsuario = parseInt(prompt("Ingrese un número entre 3 y 6:"));
+  } while (numeroUsuario < 3 || numeroUsuario > 6);
+
+  let adivinanza = prompt("¿Su número es mayor, menor o igual al número aleatorio? (mayor/menor/igual)");
+
+  let resultado;
+  if ((adivinanza === "mayor" && numeroUsuario > numeroAleatorio) ||
+      (adivinanza === "menor" && numeroUsuario < numeroAleatorio) ||
+      (adivinanza === "igual" && numeroUsuario === numeroAleatorio)) {
+    resultado = "Ha adivinado!";
+  } else {
+    resultado = "No ha adivinado.";
+  }
+
+  alert(`La computadora eligió ${numeroAleatorio}, usted eligió ${numeroUsuario}. Su elección es ${adivinanza}. ${resultado}`);
+
+  let jugarOtraVez = prompt("¿Quiere jugar otra vez? (SI/NO)");
+  if (jugarOtraVez.toUpperCase() === "SI") {
+    jugar();
+  } else {
+    alert(`Gracias por jugar, ${nombre} (${carnet})!`);
+  }
+}
+
+jugar();
+
+ 

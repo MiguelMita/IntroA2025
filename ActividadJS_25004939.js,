@@ -1,0 +1,101 @@
+var dia = prompt("ingrese el dia")
+var mes = prompt("ingrese el mes")
+
+if(mes == 1){
+  if(dia <=20){
+    alert("es capricornio");
+  }
+  if(dia >= 21){
+    alert("es acuario");
+  }
+}
+ if(mes == 2){
+  if(dia <=19){
+    alert("acuario");
+  }
+  if(dia >= 20){
+    alert("piscis");
+  }
+}
+ if(mes == 3){
+  if(dia <=20){
+    alert("piscis");
+  }
+  if(dia >= 21){
+    alert("aries");
+  }
+}
+if(mes == 4){
+  if(dia <=20){
+    alert("aries");
+  }
+  if(dia >= 21){
+    alert("tauro");
+  }
+}
+if(mes == 5){
+  if(dia <=20){
+    alert("tauro");
+  }
+  if(dia >= 21){
+    alert("geminis");
+  }
+}
+if(mes == 6){
+  if(dia <=20){
+    alert("geminis");
+  }
+  if(dia >= 21){
+    alert("canacer");
+  }
+}
+if(mes == 7){
+  if(dia <=22){
+    alert("cancer");
+  }
+  if(dia >= 23){
+    alert("leo");
+  }
+}
+if(mes == 8){
+  if(dia <=23){
+    alert("leo");
+  }
+  if(dia >= 24){
+    alert("virgo");
+  }
+}
+if(mes == 9){
+  if(dia <=22){
+    alert("virgo");
+  }
+  if(dia >= 23){
+    alert("libra");
+  }
+}
+if(mes == 10){
+  if(dia <=23){
+    alert("libra");
+  }
+  if(dia >= 24){
+    alert("escorpion");
+  }
+}
+if(mes == 11){
+  if(dia <=22){
+    alert("escorpion");
+  }
+  if(dia >= 23){
+    alert("sagitario");
+  }
+}
+if(mes == 12){
+  if(dia <=21){
+    alert("sagitario");
+  }
+  if(dia >= 22){
+    alert("capricornio");
+  }
+}
+
+
